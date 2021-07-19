@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/vue/*"
+  ],
+  "name": "jsinfor-visc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "lerna": "lerna publish",
+    "plop": "plop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-a11y": "^6.3.4",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/addon-storysource": "^6.3.4",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/vue3": "^6.3.4",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.1.0",
+    "lerna": "^4.0.0",
+    "less": "^4.1.1",
+    "less-loader": "5.0.0",
+    "plop": "^2.7.4",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.2",
+    "sass-loader": "8.0.0",
+    "storybook-readme": "^5.0.9",
+    "style-loader": "^3.1.0",
+    "style-resources-loader": "^1.4.1",
+    "vue-loader": "^16.3.1"
+  },
+  "dependencies": {
+    "@storybook/addon-notes": "^5.3.21",
+    "vue": "^3.1.5",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

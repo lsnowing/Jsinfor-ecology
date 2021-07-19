@@ -1,0 +1,15 @@
+{
+  "name": "Jsi-link",
+  "version": "0.0.0",
+  "description": "Jsi-link component",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+  },
+  "keywords": []
+}
