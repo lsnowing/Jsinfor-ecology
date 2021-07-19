@@ -1,20 +1,22 @@
 {
   "private": true,
   "workspaces": [
-    "packages/vue/*"
+    "packages/vue/**/*"
   ],
-  "name": "jsinfor-visc",
+  "name": "jsinfor-ecology",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsnowing/Jsinfor-ecology.git"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lerna": "lerna publish",
     "plop": "plop"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -27,6 +29,7 @@
     "@storybook/vue3": "^6.3.4",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.1.0",
+    "jest": "^27.0.6",
     "lerna": "^4.0.0",
     "less": "^4.1.1",
     "less-loader": "5.0.0",
