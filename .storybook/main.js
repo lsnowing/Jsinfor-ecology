@@ -2,7 +2,8 @@ const path = require("path");
 
 module.exports = {
   "stories": [
-    "../packages/**/**/**/*.stories.js", // packages/vue/所有组件都进行发布
+    "../packages/**/**/**/*.stories.js",
+    "../packages/**/**/**/*.stories.mdx",
     "../stories/**/*.stories.mdx",
   ],
   "addons": [

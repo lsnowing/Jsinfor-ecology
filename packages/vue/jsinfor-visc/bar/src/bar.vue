@@ -8,10 +8,6 @@
   </div>
 </template>
 
-// <docs>
-//   Docs inside vue module
-// </docs>
-
 <script>
 import * as $echarts from "echarts";
 

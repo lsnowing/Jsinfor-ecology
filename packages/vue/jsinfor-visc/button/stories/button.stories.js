@@ -1,15 +1,15 @@
-import button2 from '../' // 需要写../ 因为index.js导出了组件
+import JsiButton from '../' // 需要写../ 因为index.js导出了组件
 
 
 export default {
-  title: 'button',
-  component: button2
+  title: 'jsinfor-visc/JsiButton',
+  component: JsiButton
 }
 
 // 返回的是对象 不是函数代码块
 export const adminButoon = () => ({
-  components: { button2 },
-  template: '<button2 :text="text"></button2>',
+  components: { JsiButton },
+  template: '<JsiButton :text="text"></JsiButton>',
   data() {
     return {
       text: 'admin'
@@ -19,8 +19,8 @@ export const adminButoon = () => ({
 
 // 返回的是对象 不是函数代码块
 export const userButoon = () => ({
-  components: { button2 },
-  template: '<button2 :text="text"></button2>',
+  components: { JsiButton },
+  template: '<JsiButton :text="text"></JsiButton>',
   data() {
     return {
       text: 'user'

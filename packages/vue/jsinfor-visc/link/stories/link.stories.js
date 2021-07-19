@@ -1,36 +1,39 @@
-import JsiLink from '../src/link.vue'
+import JsiLink from '../' // 需要写../ 因为index.js导出了组件
+
 
 export default {
-  title: 'JsiLink',
+  title: 'jsinfor-visc/JsiLink',
   component: JsiLink
 }
 
-export const Link = _ => ({
+// 返回的是对象 不是函数代码块
+export const adminButoon = () => ({
   components: { JsiLink },
-
-  template: `
-    <div>
-      <Jsi-link @click="login"></Jsi-link>
-    </div>
-  `,
+  template: '<jsiLink @click="message"></jsiLink>',
+  data() {
+    return {
+      text: 'admin'
+    }
+  },
   methods: {
-    login() {
-      alert(1);
+    message() {
+      alert(123)
     }
   }
 })
 
-
-export const Link2 = _ => ({
+// 返回的是对象 不是函数代码块
+export const userButoon = () => ({
   components: { JsiLink },
-  template: `
-    <div>
-      <Jsi-link @click="login"></Jsi-link>
-    </div>
-  `,
+  template: '<JsiLink @click="message"></JsiLink>',
+  data() {
+    return {
+      text: 'user'
+    }
+  },
   methods: {
-    login() {
-      alert(2);
+    message() {
+      alert(456)
     }
   }
 })

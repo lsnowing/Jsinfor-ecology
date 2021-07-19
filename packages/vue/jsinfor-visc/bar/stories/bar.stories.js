@@ -3,7 +3,7 @@ import JsiBar from '../src/bar.vue'
 import readme from './README.md'
 
 export default {
-    title: 'JsiBar',
+    title: 'jsinfor-visc/JsiBar',
     component: JsiBar
 }
 
