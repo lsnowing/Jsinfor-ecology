@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="文档/技术架构" />
+
+# 技术架构
+
+## 环境
+    node => 14.16.0
+    npm => 7.19.1
+    yarn => 1.22.10
+    vue => 3.0
+    vue/cli => 4.5.13
+    webpack 5.45.1
+    webpack-cli 4.7.2
+
+## npx
+`用于初始化storybook`
+
+## yarn
+`用于安装依赖,管理所有包的依赖`
+
++ 为什么使用yarn
+
+`因为有 yarn 有 workspaces,而npm没有,它可以管理所有包的依赖,单独安装对应工作区的依赖以及把相同的依赖提升到根目录的ndoe_module`
+    
+## lerna 
+`一行命令管理git和npm的发布,以及自动更新模块版本`
+
+## plop
+`自动化构建组件所需要的文件夹/文件`
+
+## storybook
+`用于独立构建 UI 组件、页面和说明文档的框架`
+
+[官网地址](https://storybook.js.org/)
+

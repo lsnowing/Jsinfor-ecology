@@ -1,27 +1,30 @@
 import { Meta } from '@storybook/addon-docs';
 
-
 <Meta title="文档/使用说明" />
 
-
 # 使用说明
-[官网地址](https://storybook.js.org/)
 
 ## yarn
 `-D 开发依赖` `-W 工作区` `-D -W 把依赖安装到工作区的根目录`
 
-## 初始化storybook
-    npx sb init
-
-## 安装依赖vue3.0
-    cnpm install vue@next --save
-    yarn add vue vue-template-compiler vue-loader --save-dev
-
 ## 运行storybook
     yarn storybook
 
-## yarn workspaces
-* `管理包的依赖`
+## 安装依赖
+- 开发依赖
+   
+        yarn add xxxx -D -W
+
+- 给某个组件安装单独的依赖
+    
+    `jsi-bar不是文件夹名称,而是对应组件包内packjson的name`
+    
+        yarn workspace jsi-bar add echarts
+
+## plop 
+`自动生成组件文件夹以及文件夹内所需的文件`
+    
+    yarn plop
 
 ## lerna 
 * `使用lerna管理npm和git的发布`
@@ -51,8 +54,3 @@ import { Meta } from '@storybook/addon-docs';
 
     ##### 发布 
         lerna publish 
-
-## plop
-* `自动构建组件`
-
-        yarn add plop -W -D
