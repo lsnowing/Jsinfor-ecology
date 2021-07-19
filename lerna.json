@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/vue/jsinfor-visc/nn-test"
+    "packages/vue/**/*"
   ],
   "version": "0.0.0"
 }
