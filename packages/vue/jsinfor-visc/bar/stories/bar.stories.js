@@ -7,9 +7,26 @@ export default {
     component: JsiBar
 }
 
-export const Link = _ => ({
+export const Link = () => ({
     components: { JsiBar },
-    template: '<div style="width:100%;height:400px"><JsiBar :data="data" :legend="legend" :toolTipData="toolTipData" :chartHandleClick="action" :yAxisIsShow="yAxisIsShow" :yAxisAxisLine="yAxisAxisLine" :yAxisSplitLine="yAxisSplitLine" :yAxisAxisLabel="yAxisAxisLabel" :title="title" :grid="grid" :xAxisIsShow="xAxisIsShow" :xAxisAxisLine="xAxisAxisLine" :xAxisSplitLine="xAxisSplitLine" :xAxisAxisLabel="xAxisAxisLabel"></JsiBar></div>',
+    template: ` <div style="width:100%;height:400px">
+        <JsiBar 
+            :data="data" 
+            :legend="legend" 
+            :toolTipData="toolTipData" 
+            :chartHandleClick="action"
+            :yAxisIsShow="yAxisIsShow"
+            :yAxisAxisLine="yAxisAxisLine"
+            :yAxisSplitLine="yAxisSplitLine"
+            :yAxisAxisLabel="yAxisAxisLabel"
+            :title="title" :grid="grid"
+            :xAxisIsShow="xAxisIsShow"
+            :xAxisAxisLine="xAxisAxisLine"
+            :xAxisSplitLine="xAxisSplitLine"
+            :xAxisAxisLabel="xAxisAxisLabel">
+        </JsiBar>
+    </div>
+    `,
     props: {
         title: {
             default: "柱状图"

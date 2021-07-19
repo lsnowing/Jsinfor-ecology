@@ -1,7 +1,7 @@
 {
-  "name": "jsi-bar",
+  "name": "jsi-button",
   "version": "0.0.0",
-  "description": "jsi-bar component",
+  "description": "jsi-button component",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "author": "",
@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "echarts": "^5.1.2"
   },
   "keywords": []
 }
