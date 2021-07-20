@@ -3,10 +3,13 @@
     <div class="title">
       {{title}}
     </div>
+
     <div class="bar" :id="id">
     </div>
   </div>
 </template>
+
+
 
 <script>
 import * as $echarts from "echarts";
@@ -438,23 +441,8 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style lang="less" scoped>
 .chart {
-  width: 100%;
-  height: 100%;
-}
-
-.chart .title {
-  color: #333;
-  font-size: 18px;
-}
-
-.chart .bar {
-  width: 100%;
-  height: 100%;
-}
-
-/* .chart {
   width: 100%;
   height: 100%;
   .title {
@@ -465,5 +453,5 @@ export default {
     width: 100%;
     height: 100%;
   }
-} */
+}
 </style>

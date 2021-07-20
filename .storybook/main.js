@@ -1,5 +1,4 @@
 const path = require("path");
-
 module.exports = {
   "stories": [
     "../packages/**/**/**/*.stories.js",
@@ -35,10 +34,6 @@ module.exports = {
   ],
   webpackFinal: async (config) => {
     config.module.rules.push(
-      {
-        resourceQuery: /blockType=docs/,
-        use: ['storybook-readme/vue/docs-loader', 'html-loader', 'markdown-loader'],
-      },
       {
         test: /\.less$/,
         use: ['style-loader', 'css-loader', 'less-loader', 'resolve-url-loader',],
