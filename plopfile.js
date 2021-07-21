@@ -16,7 +16,7 @@ module.exports = plop => {
       },
       {
         type: 'list',
-        choices: ['common', 'jsinfor-visc'],
+        choices: ['jsinfor-fun', 'jsinfor-visc'],
         name: 'module',
         message: '创建哪种类型的组件库?'
       },
