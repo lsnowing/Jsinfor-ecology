@@ -27,6 +27,8 @@
     "@storybook/addon-storysource": "^6.3.4",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/vue3": "^6.3.4",
+    "@vue/compiler-sfc": "^3.1.5",
+    "ant-design-vue": "^2.2.2",
     "babel-loader": "^8.2.2",
     "core-js": "^3.15.2",
     "css-loader": "5.1.0",

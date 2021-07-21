@@ -1,4 +1,6 @@
+
 const path = require("path");
+
 module.exports = {
   "stories": [
     "../packages/**/**/**/*.stories.js",
@@ -33,16 +35,17 @@ module.exports = {
     "storybook-readme/register",
   ],
   webpackFinal: async (config) => {
+
     config.module.rules.push(
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader', 'resolve-url-loader',],
-        include: path.resolve(__dirname, '../packages/'),
+        use: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader'],
+        include: path.resolve(__dirname, '../packages'),
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader', 'resolve-url-loader'],
-        include: path.resolve(__dirname, '../packages/'),
+        use: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader'],
+        include: path.resolve(__dirname, '../packages'),
       }
     );
     return config;
