@@ -1,15 +1,16 @@
 {
-  "name": "jsi-radio",
-  "version": "0.0.0",
-  "description": "jsi-radio component",
-  "main": "dist/cjs/index.js",
-  "module": "dist/es/index.js",
-  "author": "",
-  "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-  },
-  "keywords": []
+"name": "jsi-button",
+"version": "0.0.0",
+"description": "jsi-button component",
+"main": "dist/cjs/index.js",
+"module": "dist/es/index.js",
+"author": "",
+"license": "MIT",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"dependencies": {
+},
+"keywords": []
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                            

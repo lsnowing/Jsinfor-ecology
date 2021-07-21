@@ -1,40 +1,21 @@
-<!--  -->
 <template>
-  <div>
-    
-
-  </div>
+   <div class="radio">
+      <a-button type="primary">
+        Primary
+      </a-button> 
+   </div>
 </template>
-
 <script>
+import { Button } from 'ant-design-vue';
+import 'ant-design-vue/lib/button/style'; // 或者 ant-design-vue/lib/button/style/css 加载 css 文件
+// import { Radio } from 'antd';
+// import 'ant-design-vue/lib/button/style';
 export default {
-  name: "button2",
-  props: {
-    text: {
-      type: String,
-      default: "按钮.",
-    },
-  },
-  data() {
-    return {
-      oText: "按钮",
-    };
-  },
-  watch: {
-    text: {
-      immediate: true,
-      handler(newVal) {
-        this.setText(newVal);
-      },
-    },
-  },
-  created() {},
-  methods: {
-    setText(val) {
-      this.oText = val;
-    },
-  },
-};
+   components:{
+      Button   
+   },
+   setup() {
+      
+   },
+}
 </script>
-<style lang='less' scoped>
-</style>
